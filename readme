@@ -1,0 +1,27 @@
+INTEGRANTES DO GRUPO:
+550610 - Fabio Hideki Kamikihara
+99696 - Luan Ramos Teixeira
+550260 - Pedro Moura Barros
+550161 - Eduardo Osorio Filho
+
+Detalhes do Projeto:
+
+-O projeto consiste em um alimentador automático controlado por Arduino, que dosa a quantidade correta de ração e água para animais, como frangos, gados e suínos, em intervalos programáveis. O sistema utiliza um display LCD para exibir informações relevantes, 
+como a dosagem atual, horários de alimentação e status do nível de água. Os atuadores são acionados para liberar a quantidade adequada de ração nos momentos programados, garantindo uma alimentação saudável e prevenindo desperdícios.
+
+
+Instruções de Uso:
+
+-Montagem do Circuito: Conecte os componentes de acordo com o esquema do circuito, considerando as pinagens definidas no código fornecido. Certifique-se de alimentar corretamente o circuito e fazer as conexões adequadas.
+-Programação do Intervalo de Alimentação: Utilize o botão para programar os intervalos de tempo desejados. Pressione o botão para avançar entre as opções disponíveis (rBaixa, rMedia, rAlta). Quando chegar à opção desejada, aguarde um instante para confirmar 
+a seleção.
+-Monitoramento do Display LCD: O display LCD exibirá as informações relevantes, como a dosagem atual de ração selecionada e o status do nível de água. Fique atento às informações exibidas para acompanhar o funcionamento do alimentador automático.
+-Manutenção do Nível de Água: Certifique-se de que o recipiente de água esteja sempre abastecido para garantir que os animais não fiquem sem água durante o período de alimentação. O sensor de nível de água monitorará essa condição e exibirá o status 
+correspondente no display LCD.
+
+Requisitos e Dependências:
+
+-Componentes Eletrônicos: Serão necessários os seguintes componentes: Arduino, display LCD, botão, atuadores (rBaixa, rMedia, rAlta) e sensor de nível de água. Certifique-se de adquirir os componentes corretos e compatíveis com o Arduino.
+-Software: Você precisará ter a plataforma Arduino IDE instalada no seu computador para carregar o código no Arduino.
+-Familiarize-se com os conceitos básicos de Arduino, linguagem de programação C/C++ e as funcionalidades dos componentes utilizados.
+
