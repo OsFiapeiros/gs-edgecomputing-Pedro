@@ -1,0 +1,80 @@
+#include <LiquidCrystal.h>
+#define rBaixa 2
+#define rMedia 4
+#define rAlta 7
+#define power 5
+#define boton 12
+#define rs 6
+#define en 3
+#define d4 8
+#define d5 9
+#define d6 10
+#define d7 11
+
+int estadoBotao = 0;
+int escolha = 1;
+
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+void setup() {
+lcd.begin(16, 2);
+Serial.begin(9600);
+pinMode(power, OUTPUT);
+pinMode(rBaixa, OUTPUT);
+pinMode(rMedia, OUTPUT);
+pinMode(rAlta, OUTPUT);
+pinMode(boton, INPUT);
+}
+
+void loop() {
+digitalWrite(power, HIGH);
+estadoBotao = digitalRead(boton);
+
+if (digitalRead(boton)) {
+while (digitalRead(boton)) {
+}
+if (escolha == 3) {
+  escolha = 1;
+} else {
+  escolha = escolha + 1;
+}
+}
+
+switch (escolha) {
+case 1:
+if (escolha == 1) {
+
+  digitalWrite(rBaixa, HIGH);
+    digitalWrite(rMedia, LOW);
+    digitalWrite(rAlta, LOW);
+    lcd.setCursor(0, 0);
+    lcd.print("95 gramas ");
+
+    break;
+  }
+
+case 2:
+  if (escolha == 2) {
+
+    digitalWrite(rMedia, HIGH);
+    digitalWrite(rAlta, LOW);
+    digitalWrite(rBaixa, LOW);
+    lcd.setCursor(0, 0);
+    lcd.print("160 gramas");
+
+    break;
+  }
+
+case 3:
+  if (escolha == 3) {
+
+    digitalWrite(rMedia, LOW);
+    digitalWrite(rAlta, HIGH);
+    digitalWrite(rBaixa, LOW);
+    lcd.setCursor(0, 0);
+    lcd.print("320 gramas");
+
+    break;
+  }
+}
+}
